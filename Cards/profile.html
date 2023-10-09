@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 250px;
+        background-color: #fff;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+
+      .rect {
+        position: absolute;
+        height: 30%;
+        width: 100%;
+
+        border-radius: 0 0 20px 20px;
+        bottom: 0;
+        z-index: 3;
+        background-color: #69e2ff;
+      }
+
+      .half-circle {
+        position: absolute;
+        height: 125px;
+        width: 250px;
+
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #69e2ff;
+
+        border-radius: 250px 250px 0px 0px;
+        bottom: 0;
+        z-index: 4;
+      }
+
+      .circle {
+        position: absolute;
+        background-color: white;
+        border: 10px solid #69e2ff;
+        border-radius: 50%;
+        top: -75px;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        background-size: cover;
+        width: 150px;
+      }
+
+      .profile-box {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+
+      .profile-name {
+        margin-bottom: 5px;
+      }
+
+      /* .profile-david {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="profile-box">
+          <h2 class="profile-name">DAVID M</h2>
+          <div class="profession">Junior Associative</div>
+        </div>
+
+        <img
+          src="img/DAVID-PROFILE-PHOTO-WITH-WHITE-BACKGROUND.jpg"
+          alt="david profile photo"
+          height="150px"
+          class="circle"
+        />
+        <div class="rect"></div>
+        <div class="half-circle"></div>
+      </div>
+      <div class="card">
+        <div class="profile-box">
+          <h2 class="profile-name">DAVID M</h2>
+          <div class="profession">Junior Associative</div>
+        </div>
+
+        <img
+          src="img/DAVID-PROFILE-PHOTO-WITH-WHITE-BACKGROUND.jpg"
+          alt="david profile photo"
+          height="150px"
+          class="circle"
+        />
+        <div class="rect"></div>
+        <div class="half-circle"></div>
+      </div>
+      <div class="card">
+        <div class="profile-box">
+          <h2 class="profile-name">DAVID M</h2>
+          <div class="profession">Junior Associative</div>
+        </div>
+
+        <img
+          src="img/DAVID-PROFILE-PHOTO-WITH-WHITE-BACKGROUND.jpg"
+          alt="david profile photo"
+          height="150px"
+          class="circle"
+        />
+        <div class="rect"></div>
+        <div class="half-circle"></div>
+      </div>
+      <div class="card">
+        <div class="profile-box">
+          <h2 class="profile-name">DAVID M</h2>
+          <div class="profession">Junior Associative</div>
+        </div>
+
+        <img
+          src="img/DAVID-PROFILE-PHOTO-WITH-WHITE-BACKGROUND.jpg"
+          alt="david profile photo"
+          height="150px"
+          class="circle"
+        />
+        <div class="rect"></div>
+        <div class="half-circle"></div>
+      </div>
+    </div>
+  </body>
+</html>
