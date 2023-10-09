@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        color: white;
+        font-size: 24px;
+        font-family: sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        background-color: #555;
+      }
+
+      .header {
+        display: flex;
+        width: 100%;
+        height: 15%;
+        border: 5px solid black;
+
+        justify-content: center;
+        align-items: center;
+        background-color: #1eaafc;
+        background-image: linear-gradient(160deg, #6c52d9 0%, #9b8ae6 127%);
+      }
+
+      .main-content {
+        display: flex;
+        width: 100%;
+        height: 70%;
+        gap: 20px;
+      }
+
+      .side-bar {
+        height: 100%;
+        width: 30%;
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(203deg, #3edfd7 0%, #29a49d 90%);
+      }
+
+      .main {
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .content-box-1 {
+        height: 50%;
+        width: 100%;
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+          130deg,
+          #6c52d9 0%,
+          #1eaafc 85%,
+          #3edfd7 100%
+        );
+      }
+
+      .content-box-2 {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+      }
+
+      .content-2,
+      .content-3 {
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-image: linear-gradient(
+          130deg,
+          #6c52d9 0%,
+          #1eaafc 85%,
+          #3edfd7 100%
+        );
+      }
+
+      .footer {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid black;
+        background-color: #6c52d9;
+        background-image: linear-gradient(160deg, #6c52d9 0%, #9b8ae6 127%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header row">header</header>
+      <div class="main-content">
+        <aside class="side-bar">sidebar</aside>
+        <main class="main">
+          <div class="content-box-1">Content-1</div>
+          <div class="content-box-2">
+            <div class="content-2">Content-1</div>
+            <div class="content-3">Content-3</div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">footer</footer>
+    </div>
+  </body>
+</html>
